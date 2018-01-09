@@ -6,3 +6,4 @@
 * 4-listmorefiles: display current directory contents, including hidden files
 * 5-listfilesdigitonly: display long format, hidden, and user/group IDs 
 * 6-firstdirectory: creates a holberton directory in /tmp/
+* 7-movethatfile: move the file betty from /tmp/ to /tmp/holberton
