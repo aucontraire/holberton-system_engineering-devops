@@ -10,3 +10,4 @@
 * 8-firstdelete: delete	betty from /tmp/holberton
 * 9-firstdirdeletion: delete the directory holberton that is in the /tmp directory
 * 10-back: changes the working directory to the previous one
+* 11-lists: list in long format all files in three directories
