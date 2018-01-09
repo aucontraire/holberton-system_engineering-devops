@@ -12,3 +12,4 @@
 * 10-back: changes the working directory to the previous one
 * 11-lists: list in long format all files in three directories
 * 12-file_type: prints the type of the file named iamafile
+* 13-symbolic_link: create a symbolic link to /bin/ls named __ls__
