@@ -8,3 +8,4 @@
 * 6-firstdirectory: creates a holberton directory in /tmp/
 * 7-movethatfile: move the file betty from /tmp/ to /tmp/holberton
 * 8-firstdelete: delete	betty from /tmp/holberton
+* 9-firstdirdeletion: delete the directory holberton that is in the /tmp directory
