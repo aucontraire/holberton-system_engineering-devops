@@ -14,3 +14,4 @@
 * 12-directory_permissions: script that creates a directory called dir_holberton with permissions 751 in the working directory
 * 13-change_group: script that changes the group owner to holberton for the file hello
 * 14-change_owner_and_group: script that changes the owner to betty and the group owner to holberton
+* 15-symbolic_link_permissions: script that changes the owner and the group owner of the symbolic link file _hello to betty and holberton respectively
