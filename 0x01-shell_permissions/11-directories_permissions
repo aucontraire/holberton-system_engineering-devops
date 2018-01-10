@@ -1,2 +1,2 @@
 #!/bin/bash
-chmod a+x -R `find -type d`
+chmod a+x $(find -type d)
