@@ -8,3 +8,4 @@
 * 6-multiple_permissions: script that adds execute permission to the owner and group, read permission to others
 * 7-everybody: script that adds execution permission to all
 * 8-James_Bond: script that sets all the permission for other users and none for rest
+* 9-John_Doe: script that sets custom permissions to hello
