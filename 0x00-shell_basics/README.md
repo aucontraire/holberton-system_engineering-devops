@@ -17,3 +17,4 @@
 * 15-lets_move: moves all files beginning with an uppercase letter to the directory /tmp/u
 * 16-clean_emacs: delete all the file in the cwd ending	with ~
 * 17-tree: create a directory tree in one line
+* 18-commas: custom ls with sort
