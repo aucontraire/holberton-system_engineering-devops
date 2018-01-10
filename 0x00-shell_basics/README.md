@@ -18,3 +18,4 @@
 * 16-clean_emacs: delete all the file in the cwd ending	with ~
 * 17-tree: create a directory tree in one line
 * 18-commas: custom ls with sort
+* holberton.mgc: magic file holberton.mgc that can be used with the command file to detect Holberton data files
