@@ -10,3 +10,4 @@
 * 8-James_Bond: script that sets all the permission for other users and none for rest
 * 9-John_Doe: script that sets custom permissions to hello
 * 10-mirror_permissions: script that sets the mode of the file hello the same as olleh's mode
+* 11-directories_permissions: script that adds execute permission to all subdirectories of the current directory
