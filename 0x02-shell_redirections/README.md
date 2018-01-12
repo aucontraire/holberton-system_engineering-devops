@@ -10,3 +10,4 @@
 * 7-file: script that creates a file named exactly \*\\'"Holberton School"\'\\*$\?\*\*\*\*\*:)
 * 9-duplicate_last_line: script that duplicates the last line of the file iacta
 * 10-no_more_js: script that deletes all the regular files (not the directories) with a .js
+* 11-directories: script that counts the number of directories and sub-directories
