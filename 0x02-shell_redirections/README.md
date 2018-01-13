@@ -21,3 +21,4 @@
 * 19-AZ: script to replace all characters A and c from input to Z and e respectively
 * 20-hiago: script that removes all letters c and C from input
 * 21-reverse: script that reverse its input
+* 22-users_and_homes: script that displays all users and their home directories, sorted by users
