@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -aFm --file-type | sort -V
+ls -map
