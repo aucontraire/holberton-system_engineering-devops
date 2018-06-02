@@ -11,3 +11,4 @@
 * 9-to_file_or_not_to_file: bash script that gives you information about the holbertonschool file
 * 10-fizzbuzz: bash script that displays numbers from 1 to 100
 * 100-read_and_cut: bash script that displays the content of the file /etc/passwd
+* 101-tell_the_story_of_passwd: bash script that tells the story of /etc/password
