@@ -9,3 +9,4 @@
 * 7-clock: bash script that displays the time for 12 hours and 59 minutes
 * 8-for_ls: bash script that displays dir contents after hyphen
 * 9-to_file_or_not_to_file: bash script that gives you information about the holbertonschool file
+* 10-fizzbuzz: bash script that displays numbers from 1 to 100

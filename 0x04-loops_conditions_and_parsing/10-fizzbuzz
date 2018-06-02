@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+#bash script that displays numbers from 1 to 100
+number=1
+while [ $number -lt 101 ]; do
+    if [ $((number % 5)) == 0 ] && [ $((number % 3)) == 0 ]; then
+	echo "FizzBuzz"
+    elif [ $((number % 5)) == 0 ]; then
+	echo "Buzz"
+    elif [ $((number % 3)) == 0 ]; then
+	echo "Fizz"
+    else
+	echo $number
+    fi
+    let number+=1
+done
