@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# This script is displays luck messages for numbers or "Holberton School"
+counter=1
+while [ $counter -lt 11 ]; do
+    if [ $counter -eq 4 ]
+    then
+	echo "bad luck"
+    elif [ $counter -eq 8 ]
+    then
+	echo "good luck"
+    else
+	echo "Holberton School"
+    fi
+    let counter=counter+1
+done
