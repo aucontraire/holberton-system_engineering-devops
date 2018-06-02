@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+#bash script that displays numbers from 1 to 20 and luck messages
+counter=1
+while [ $counter -lt 21 ]; do
+    echo $counter
+    case "$counter" in
+	"4")
+	    echo "bad luck from China"
+	    ;;
+	"9")
+	    echo "bad luck from Japan"
+	    ;;
+	"17")
+	    echo "bad luck from Italy"
+	    ;;
+    esac
+    let counter+=1
+done
