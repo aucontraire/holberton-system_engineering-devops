@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+#bash script that displays dir contents after hyphen
+#ls | cut -d '-' -f2
+#ls | while read line; do cut -d '-' -f2; done
+for line in *; do
+    echo "$line" | cut -d '-' -f2
+done

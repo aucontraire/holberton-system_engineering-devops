@@ -7,3 +7,4 @@
 * 5-4_bad_luck_8_is_your_chance: bash script that loops from 1 to 10 and prints luck statements
 * 6-superstitious_numbers: bash script that displays numbers from 1 to 20 and luck messages
 * 7-clock: bash script that displays the time for 12 hours and 59 minutes
+* 8-for_ls: bash script that displays dir contents after hyphen
