@@ -6,3 +6,4 @@
 * 4-to_infinity_and_beyond: bash script that displays 'To infinity and beyond' indefinitely
 * 5-kill_me_now: bash script that kills 4-to_infinity_and_beyond process
 * 6-kill_me_now_made_easy: bash script that kills 4-to_infinity_and_beyond process easily
+* 7-highlander: bash script that displays 'To infinity and beyond', if kill attempt 'I am invincible!!!'
