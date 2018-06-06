@@ -9,3 +9,4 @@
 * 7-highlander: bash script that displays 'To infinity and beyond', if kill attempt 'I am invincible!!!'
 * 8-beheaded_process: bash script that kills the process 7-highlander
 * 100-process_and_pid_file: bash script that creates file, responds to kill, deletes file
+* 101-manage_my_process, manage_my_process: bash script that manages a process
