@@ -5,3 +5,4 @@
 * 3-repetition_token_2.rb: repetition token #2
 * 4-repetition_token_3.rb: repetition token #3
 * 5-beginning_and_end.rb: starts with h and ends with n
+* 6-phone_number.rb: match a 10 digit phone number
