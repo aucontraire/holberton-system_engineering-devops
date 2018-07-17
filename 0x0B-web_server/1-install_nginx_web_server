@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # bash script to install nginx
-apt-get -y update
-apt-get -y install nginx
+sudo apt-get -y update
+sudo apt-get -y install nginx
 echo "Holberton School for the win!" > /usr/share/nginx/html/index.html
 service nginx restart
