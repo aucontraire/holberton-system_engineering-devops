@@ -2,4 +2,5 @@
 # bash script to install nginx
 apt-get -y update
 apt-get -y install nginx
-echo "Holberton School for the win!" > /usr/share/nginx/html/index.html
+echo "Holberton School" > /usr/share/nginx/html/index.html
+service nginx restart
