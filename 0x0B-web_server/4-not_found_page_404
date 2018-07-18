@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# bash script to make /redirect_me redirect to another site
+apt-get -y update
+apt-get -y install nginx
+mv /usr/share/nginx/html/index.html /usr/share/nginx/html/index.txt
+echo "Holberton School" > /usr/share/nginx/html/index.html
+new_string=".rules\n\t\trewrite ^\/redirect_me https:\/\/www.youtube.com\/watch?v=QH2-TGUlwu4 perm\
+anent;\n"
+sed -i "s/.rules/$new_string/" /etc/nginx/sites-available/default
+sed -i "s/#error_page 404 \/404.html;/error_page 404 \/404.html;/" /etc/nginx/sites-available/defa\
+ult
+service nginx restart
