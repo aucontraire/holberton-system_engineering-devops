@@ -1,3 +1,4 @@
+# create file with certain requirements
 file { '/tmp/holberton':
   ensure  => file,
   path    => '/tmp/holberton',
