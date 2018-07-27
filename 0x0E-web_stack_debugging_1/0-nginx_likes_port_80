@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-string="8080"
-new_string="80"
-sed -i "s/$string/$new_string/g" /etc/nginx/sites-enabled/default
+string="8080 default_server"
+new_string="80 default_server"
+sed -i "s/$string/$new_string/" /etc/nginx/sites-enabled/default
 service nginx restart
