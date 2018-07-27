@@ -2,4 +2,4 @@
 # fix port 80 access
 string="8080 default_server"
 sed -i "s/$string/80 default_server/" /etc/nginx/sites-enabled/default
-service nginx restart
+service nginx stop
