@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# fix port 80 access
+string="8080 default_server"
+new_string="80 default_server"
+sed -i "s/$string/$new_string/" /etc/nginx/sites-enabled/default
+service nginx restart
