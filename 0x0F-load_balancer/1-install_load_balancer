@@ -11,5 +11,5 @@ echo -e "frontend localnodes
 backend nodes
     balance roundrobin
     server 350-web-01 35.227.39.114:80 check
-    server 350-web-02 35.231.236.123:80 check
-    service haproxy restart" >> /etc/haproxy/haproxy.cfg
+    server 350-web-02 35.231.236.123:80 check" >> /etc/haproxy/haproxy.cfg
+service haproxy restart
