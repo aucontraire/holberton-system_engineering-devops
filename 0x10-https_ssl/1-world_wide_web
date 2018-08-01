@@ -4,10 +4,10 @@ if [ $# -eq 1 ]; then
     for sub in www lb-01 web-01 web-02; do
 	name="$(dig "$sub"."$1" | grep -A1 'ANSWER SECTION:' | tail -1 | awk '{print $4}')"
 	ip="$(dig "$sub"."$1" | grep -A1 'ANSWER SECTION:' | tail -1 | awk '{print $5}')"
-	echo "The subdomain $sub is a $name and points to $ip"
+	echo "The subdomain $sub is a $name record and points to $ip"
     done
 elif [ $# -eq 2 ]; then
     name="$(dig "$2"."$1" | grep -A1 'ANSWER SECTION:' | tail -1 | awk '{print $4}')"
     ip="$(dig "$2"."$1" | grep -A1 'ANSWER SECTION:' | tail -1 | awk '{print $5}')"
-    echo "The subdomain $2 is a $name and points to $ip"
+    echo "The subdomain $2 is a $name record and points to $ip"
 fi
