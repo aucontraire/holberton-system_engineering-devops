@@ -4,12 +4,5 @@ apt-get -y update
 apt-get -y install haproxy=1.5
 
 sed -i "s/ENABLED=0/ENABLED=1/" /etc/default/haproxy
-echo -e "frontend localnodes
-    bind *:80
-    default_backend nodes
-
-backend nodes
-    balance roundrobin
-    server 350-web-01 35.227.39.114:80 check
-    server 350-web-02 35.231.236.123:80 check" >> /etc/haproxy/haproxy.cfg
+echo -e "frontend localnodes\n\tbind *:80\n\tdefault_backend nodes\nbackend nodes\n\tbalance roundrobin\n\tserver 350-web-01 35.227.39.114:80 check\n\tserver 350-web-02 35.231.236.123:80 check" >> /etc/haproxy/haproxy.cfg
 service haproxy restart
