@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 # script to gather todo data from an API and write to JSON file
-import sys
 import json
 import requests
+import sys
 
 
 def get_username(base_url, user_id):
