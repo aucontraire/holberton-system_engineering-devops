@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 # script to gather data from an API
-import sys
 import requests
+import sys
 
 
 def get_username(base_url, user_id):
