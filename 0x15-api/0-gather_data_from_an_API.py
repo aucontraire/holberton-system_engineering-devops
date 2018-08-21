@@ -6,14 +6,14 @@ import requests
 
 def get_username(base_url, user_id):
     response = requests.get(
-        "{}users/{}".format(base_url, user_id), verify=False)
+        "{}users/{}".format(base_url, user_id))
     usr_dict = response.json()
     return usr_dict['name']
 
 
 def get_todo_list(base_url, user_id):
     response = requests.get(
-        "{}users/{}/todos".format(base_url, user_id), verify=False)
+        "{}users/{}/todos".format(base_url, user_id))
     return response.json()
 
 
