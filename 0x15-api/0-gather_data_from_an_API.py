@@ -4,24 +4,43 @@ import sys
 import requests
 
 
-url_usr = 'https://jsonplaceholder.typicode.com/users/'
+def get_username(base_url, user_id):
+    response = requests.get(
+        "{}users/{}".format(base_url, user_id), verify=False)
+    usr_dict = response.json()
+    return usr_dict['name']
 
-response_usr = requests.get("{}{}".format(url_usr, sys.argv[1]), verify=False)
-json_dict = response_usr.json()
-name = json_dict['name']
 
-url_todos = '{}{}/todos'.format(url_usr, sys.argv[1])
-todos_list = requests.get(url_todos, verify=False).json()
+def get_todo_list(base_url, user_id):
+    response = requests.get(
+        "{}users/{}/todos".format(base_url, user_id), verify=False)
+    return response.json()
 
-total = len(todos_list)
 
-count = 0
-done_str = ""
+def get_completed(todo_list):
+    done_str = ""
+    done_list = []
+    count = 0
+    for todo in todo_list:
+        if todo['completed'] is True:
+            count += 1
+            done_list.append("\t {}".format(todo['title']))
+    done_str = "\n".join(done_list)
 
-for todo in todos_list:
-    if todo['completed'] is True:
-        count += 1
-        done_str += "\t{}\n".format(todo['title'])
+    return count, done_str
 
-print("Employee {} is done with tasks({}/{}):".format(name, count, total))
-print(done_str)
+
+if __name__ == '__main__':
+    user_id = sys.argv[1]
+    base_url = 'https://jsonplaceholder.typicode.com/'
+
+    username = get_username(base_url, user_id)
+    todo_list = get_todo_list(base_url, user_id)
+    total = len(todo_list)
+
+    count, done_str = get_completed(todo_list)
+
+    print(
+        "Employee {} is done with tasks({}/{}):".format(username, count, total))
+    if count > 0:
+        print(done_str)
