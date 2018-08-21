@@ -9,7 +9,7 @@ def get_username(base_url, user_id):
     response = requests.get(
         "{}users/{}".format(base_url, user_id))
     usr_dict = response.json()
-    return usr_dict['name']
+    return usr_dict['username']
 
 
 def get_todo_list(base_url, user_id):
