@@ -34,13 +34,13 @@ if __name__ == '__main__':
     user_id = sys.argv[1]
     base_url = 'https://jsonplaceholder.typicode.com/'
 
-    username = get_username(base_url, user_id)
+    uname = get_username(base_url, user_id)
     todo_list = get_todo_list(base_url, user_id)
     total = len(todo_list)
 
     count, done_str = get_completed(todo_list)
 
     print(
-        "Employee {} is done with tasks({}/{}):".format(username, count, total))
+        "Employee {} is done with tasks({}/{}):".format(uname, count, total))
     if count > 0:
         print(done_str)
