@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 # script to gather todo data from an API and write to CSV file
-import sys
 import csv
 import requests
+import sys
 
 
 def get_username(base_url, user_id):
