@@ -5,6 +5,12 @@ import requests
 
 
 def get_username(base_url, user_id):
+    """Gets username
+       Args:
+           base_url (str): base url for API
+           user_id (str): user id number
+       Returns: username
+    """
     response = requests.get(
         "{}users/{}".format(base_url, user_id))
     usr_dict = response.json()
@@ -12,12 +18,24 @@ def get_username(base_url, user_id):
 
 
 def get_todo_list(base_url, user_id):
+    """Gets todo list
+       Args:
+           base_url (str): base url for API
+           user_id (str): user id number
+       Returns: list of todo items (dicts)
+    """
     response = requests.get(
         "{}users/{}/todos".format(base_url, user_id))
     return response.json()
 
 
 def get_completed(todo_list):
+    """Gets completed items
+       Args:
+           todo_list (list): list of todo items
+       Returns: string of todo items to print
+    """
+
     done_str = ""
     done_list = []
     count = 0
