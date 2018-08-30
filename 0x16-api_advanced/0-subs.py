@@ -10,7 +10,7 @@ def number_of_subscribers(subreddit):
        Returns:
            number of subscribers if valid, 0 otherwise
     """
-    base_url = 'https://www.reddit.com/r/'
+    base_url = 'http://www.reddit.com/r/'
     headers = {'User-Agent': 'my-app/0.0.1'}
     response = requests.get(
         '{}{}/about/.json'.format(
