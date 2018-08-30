@@ -15,7 +15,7 @@ def top_ten(subreddit):
             base_url, subreddit), headers=headers, allow_redirects=False)
 
     if response.status_code != 200:
-        return 0
+        return None
 
     hot_dict = response.json()
 
