@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""function that returns the number of subscribers for a given subreddit"""
+"""Function that prints top ten hot posts for a given subreddit"""
 import requests
 
 
@@ -15,9 +15,11 @@ def top_ten(subreddit):
             base_url, subreddit), headers=headers, allow_redirects=False)
 
     if response.status_code != 200:
-        return None
-
-    hot_dict = response.json()
-
-    for d in hot_dict['data']['children']:
-        print(d['data']['title'])
+        print('None')
+    else:
+        hot_dict = response.json()
+        if len(hot_dict['data']['children']) == 0:
+            print('None')
+        else:
+            for d in hot_dict['data']['children']:
+                print(d['data']['title'])
