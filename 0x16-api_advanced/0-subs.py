@@ -10,10 +10,10 @@ def number_of_subscribers(subreddit):
        Returns:
            number of subscribers if valid, 0 otherwise
     """
-    base_url = 'http://www.reddit.com/r/'
+    base_url = 'https://api.reddit.com/r/'
     headers = {'User-Agent': 'my-app/0.0.1'}
     response = requests.get(
-        '{}{}/about/.json'.format(
+        '{}{}/about'.format(
             base_url, subreddit), headers=headers, allow_redirects=False)
 
     if response.status_code != 200:
